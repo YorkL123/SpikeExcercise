@@ -33,4 +33,5 @@ Created a GitHub repository for my UW-Live Well mobile app. Wanted to do this so
 
 
 UW Live Well UML
+Can be found in project as SpikeExcercise.jpg
 [[https://github.com/ethLengfeld/SpikeExcercise/master/SpikeExcercise.jpg|alt=SpikeUML]]
