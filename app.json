@@ -1,8 +1,8 @@
 {
-  "name": "bareminspike",
+  "name": "SpikeExcercise",
   "displayName": "UW Live Well",
   "expo": {
-    "name": "bareminspike",
+    "name": "SpikeExcercise",
     "slug": "expo-template-bare",
     "privacy": "unlisted",
     "sdkVersion": "35.0.0",

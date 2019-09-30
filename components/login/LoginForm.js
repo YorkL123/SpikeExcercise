@@ -32,6 +32,7 @@ export default class LoginForm extends Component {
                 <TouchableOpacity style={styles.buttonContainer}>
                     <Text style={styles.buttonText}>LOGIN</Text>
                 </TouchableOpacity>
+                
             </View>
         );
     }
@@ -54,6 +55,5 @@ const styles = StyleSheet.create({
     buttonText:{
         textAlign: 'center',
         fontWeight: '800'
-        
     }
 })

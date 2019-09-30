@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { StyleSheet, Text, View, Image, KeyboardAvoidingView } from 'react-native';
-import LoginForm from './LoginForm';
+import { StyleSheet, Text, View, Image, KeyboardAvoidingView, TouchableOpacity } from 'react-native';
+import LoginForm from './LoginForm.js';
+import CreateAccountForm from './CreateAccountForm.js';
 
 export default class Login extends Component {
     render() {
@@ -9,7 +10,7 @@ export default class Login extends Component {
 
                 <View style={styles.logoContainer}>
 
-                    <Image style={styles.logo} source={require('../Images/UW-LiveWellLogo.png')}/>
+                    <Image style={styles.logo} source={require('../../Images/UW-LiveWellLogo.png')}/>
                     <Text style={styles.title}>Helping UW-Madison students find roommates</Text>
 
                 </View>
@@ -17,6 +18,14 @@ export default class Login extends Component {
                 <View style={styles.formContainer}>
                     <LoginForm />
                 </View>
+
+                <View style={styles.formContainer}>
+                    <CreateAccountForm />
+                </View>
+
+                <TouchableOpacity style={styles.buttonContainer}>
+                    <Text style={styles.buttonText}>Continue as Guest</Text>
+                </TouchableOpacity>
 
             </KeyboardAvoidingView>
         );
@@ -43,5 +52,9 @@ const styles = StyleSheet.create({
         marginTop: 20,
         width: 300,
         textAlign: 'center'
+    },
+    buttonContainer:{
+        backgroundColor: '#D6B9B8',
+        paddingVertical: 20
     }
 })
