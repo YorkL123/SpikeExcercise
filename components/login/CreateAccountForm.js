@@ -18,6 +18,7 @@ const styles = StyleSheet.create({
         padding: 10,
         flexDirection: 'row'
     },
+    
     link:{
         fontWeight: '700',
         textDecorationLine: 'underline'

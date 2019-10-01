@@ -13,17 +13,20 @@ export default class Login extends Component {
                     <Text style={styles.title}>Helping UW-Madison students find roommates</Text>
                 </View>
 
-                <View style={styles.formContainer}>
+                <View>
                     <LoginForm />
                 </View>
 
-                <View style={styles.formContainer}>
+                <View>
                     <CreateAccountForm />
                 </View>
 
-                <TouchableOpacity style={styles.buttonContainer}>
-                    <Text style={styles.buttonText}>Continue as Guest</Text>
-                </TouchableOpacity>
+                <View style={styles.buttonView}>
+                    <TouchableOpacity style={styles.buttonContainer}>
+                        <Text style={styles.buttonText}>Continue as Guest</Text>
+                    </TouchableOpacity>
+                </View>
+
 
             </KeyboardAvoidingView>
         );
@@ -56,10 +59,15 @@ const styles = StyleSheet.create({
         textAlign: 'center'
     },
 
+    buttonView:{
+        alignItems: 'center',
+        paddingBottom: 20
+    },
     buttonContainer:{
         padding: 20,
-        backgroundColor: 'rgba(16,255,26,0.5)',
-        paddingVertical: 10
+        backgroundColor: 'rgba(16,255,26,0.3)',
+        paddingVertical: 10,
+        width: 200
     },
     
     buttonText:{

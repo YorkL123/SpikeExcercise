@@ -3,6 +3,6 @@
   "lanType": "ip",
   "dev": true,
   "minify": false,
-  "urlRandomness": "pu-prf",
+  "urlRandomness": "pq-jrw",
   "https": false
 }
