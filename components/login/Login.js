@@ -9,10 +9,8 @@ export default class Login extends Component {
             <KeyboardAvoidingView behavior='padding' style={styles.container}>
 
                 <View style={styles.logoContainer}>
-
                     <Image style={styles.logo} source={require('../../Images/UW-LiveWellLogo.png')}/>
                     <Text style={styles.title}>Helping UW-Madison students find roommates</Text>
-
                 </View>
 
                 <View style={styles.formContainer}>
@@ -33,19 +31,23 @@ export default class Login extends Component {
 }
 
 const styles = StyleSheet.create({
+
     container:{
         flex: 1,
         backgroundColor: '#AA3939'
     },
+
     logoContainer:{
         alignItems: 'center',
         flexGrow: 1,
         justifyContent: 'center'
     },
+
     logo:{
         height: 100,
         width: 350
     },
+    
     title:{
         color: '#FFF',
         fontSize: 26,
@@ -53,8 +55,15 @@ const styles = StyleSheet.create({
         width: 300,
         textAlign: 'center'
     },
+
     buttonContainer:{
-        backgroundColor: '#D6B9B8',
-        paddingVertical: 20
+        padding: 20,
+        backgroundColor: 'rgba(16,255,26,0.5)',
+        paddingVertical: 10
+    },
+    
+    buttonText:{
+        textAlign: 'center',
+        fontWeight: '800'
     }
 })
