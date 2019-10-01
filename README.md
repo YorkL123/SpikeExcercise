@@ -27,6 +27,9 @@ Developed the Login screen for the UW-Live Well App. Created login screen with a
 ## 09/30/2019
 Created a GitHub repository for my UW-Live Well mobile app. Wanted to do this so I could get better practice with using Git as my version control system. Importing developer journal so that I can also make commits to the README file.  Watched tutorials on how to connect my React Native app to Firebase. Installed Firebase into my React project. Added ability to 'Create Account' and 'Continue as a Guest' from the main login page.
 
+## 10/01/2019
+Configured the database configuration in React js. Able to insert first test data into Firebase database
+
 
 
 
