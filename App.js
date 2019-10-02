@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import Login from './components/login/Login.js';
+import Dashboard from './components/Dashboard.js';
+
 import firebase from 'firebase';
 
 const instructions = Platform.select({
@@ -9,7 +11,15 @@ const instructions = Platform.select({
 });
 
 export default class App extends Component {
+  constructor(props) {
+    super(props);
 
+    this.state = {
+        loggedIn: 0,
+        registeredUser: 0,
+        name: "Guest"
+    }
+  }
   componentWillMount() {
 
     var firebaseConfig = {
@@ -38,27 +48,19 @@ export default class App extends Component {
   }
 
   render() {
+
+    // if(this.state.loggedIn.value == 0) {
+    //   currView = 
+    // }
+
+
     return (
-      <Login />
+      //<Login />
+      <Dashboard />
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#fff',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+
 });

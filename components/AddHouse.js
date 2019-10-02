@@ -3,40 +3,39 @@ import { StyleSheet, Text, View, TextInput, TouchableOpacity, StatusBar } from '
 import firebase from 'firebase';
 
 
-export default class CreateAccountForm extends Component {
+export default class AddHouse extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            firstName: "",
-            lastName: "",
-            email: "",
-            password: ""
+            description: "",
+            address: "",
+            costPerMonth: "",
+            noOfRooms: ""
         }
 
     }
 
     validateForm() {
-        return this.state.firstName.length > 0 &&
-               this.state.lastName.length > 0 &&
-               this.state.email.length > 0 &&
-               this.state.password.length > 0
+        return this.state.description.length > 0 &&
+               this.state.address.length > 0 &&
+               this.state.costPerMonth.length > 0 &&
+               this.state.noOfRooms.length > 0
     }
 
     handleSubmit = event => {
-        // need to validate email
-        event.preventDefault();
-        console.log(this.state.firstName+","+this.state.lastName+","+ this.state.email+","+this.state.password);
 
-        firebase.database().ref("users/").push(
+        event.preventDefault();
+
+        firebase.database().ref("houses/").push(
             {
-                first_name: this.state.firstName,
-                last_name: this.state.lastName,
-                email: this.state.email,
-                password: this.state.password
+                description: this.state.description,
+                address: this.state.address,
+                costPerMonth: this.state.costPerMonth,
+                noOfRooms: this.state.noOfRooms
             }
         ).then(() => {
-            console.log("Inserted");
+            console.log("Inserted new House");
         }).catch((error) => {
             console.log(error);
         });
@@ -44,7 +43,7 @@ export default class CreateAccountForm extends Component {
 
 
     render() {
-        
+
         return (
             <View style={styles.container}>
                 <StatusBar
@@ -52,9 +51,9 @@ export default class CreateAccountForm extends Component {
                 />
 
                 <TextInput
-                    // First Name
+                    // Description
                     style={styles.input}
-                    placeholder='First Name'
+                    placeholder='Description'
                     placeholderTextColor="rgba(0,0,0,0.8)"
                     returnKeyType='next'
                     keyboardType='default'
@@ -62,15 +61,15 @@ export default class CreateAccountForm extends Component {
                     autoCorrect={false}
                     required
 
-                    ref={(input) => this.firstNameInput = input}
-                    onChangeText={(firstName) => this.setState({ firstName })}
-                    value={this.state.firstName}
+                    ref={(input) => this.descriptionInput = input}
+                    onChangeText={(description) => this.setState({ description })}
+                    value={this.state.description}
                 />
 
                 <TextInput
-                    // Last Name
+                    // Address
                     style={styles.input}
-                    placeholder='Last Name'
+                    placeholder='Address'
                     placeholderTextColor="rgba(0,0,0,0.8)"
                     returnKeyType='next'
                     keyboardType='default'
@@ -78,42 +77,45 @@ export default class CreateAccountForm extends Component {
                     autoCorrect={false}
                     required
 
-                    ref={(input) => this.lastNameInput = input}
-                    onChangeText={(lastName) => this.setState({ lastName })}
-                    value={this.state.lastName}
+                    ref={(input) => this.addInput = input}
+                    onChangeText={(address) => this.setState({ address })}
+                    value={this.state.address}
                 />
 
                 <TextInput
-                    // Email
+                    // Cost per Month
                     style={styles.input}
-                    placeholder='Email'
+                    placeholder='Cost Per Month'
                     placeholderTextColor="rgba(0,0,0,0.8)"
                     returnKeyType='next'
-                    keyboardType='email-address'
+                    keyboardType='default'
                     autoCapitalize='none'
                     autoCorrect={false}
                     required
 
-                    ref={(input) => this.emailInput = input}
-                    onChangeText={(email) => this.setState({ email })}
-                    value={this.state.email}
+                    ref={(input) => this.costPerMonthInput = input}
+                    onChangeText={(costPerMonth) => this.setState({ costPerMonth })}
+                    value={this.state.costPerMonth}
                 />
+
                 <TextInput
-                    // Password
+                    // No. of Rooms
                     style={styles.input}
-                    placeholder='Password'
-                    placeholderTextColor='rgba(0,0,0,0.8)'
-                    returnKeyType='go'
-                    secureTextEntry
+                    placeholder='Number of Rooms Available'
+                    placeholderTextColor="rgba(0,0,0,0.8)"
+                    returnKeyType='next'
+                    keyboardType='default'
+                    autoCapitalize='none'
+                    autoCorrect={false}
                     required
 
-                    ref={(input) => this.passwordInput = input}
-                    onChangeText={(password) => this.setState({ password })}
-                    value={this.state.password}
+                    ref={(input) => this.noOfRoomsInput = input}
+                    onChangeText={(noOfRooms) => this.setState({ noOfRooms })}
+                    value={this.state.noOfRooms}
                 />
 
                 <TouchableOpacity style={styles.buttonContainer} onPress={this.handleSubmit} disabled={!this.validateForm()}>
-                    <Text style={styles.buttonText}>Create Account</Text>
+                    <Text style={styles.buttonText}>Add New House</Text>
                 </TouchableOpacity>
 
             </View>
@@ -124,7 +126,8 @@ export default class CreateAccountForm extends Component {
 const styles = StyleSheet.create({
 
     container: {
-        padding: 20
+        padding: 20,
+        backgroundColor: '#488583'
     },
 
     input: {

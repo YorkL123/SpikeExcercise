@@ -13,7 +13,7 @@ Met with project teammates and decided on using React for front-end development 
 Began doing React tutorials. Went through the entire ‘Getting Started’ tutorial. Learned commands to create and start a web app locally. Built a small web app to use as a Sandbox
 
 ## 09/24/2019
-Built simple UML diagram using draw.io for the Spike Exercise (Detailed at bottom of journal)..
+Built simple UML diagram using draw.io for the Spike Exercise (Detailed at bottom of journal). Can also be found within the project as SpikeExcercise.jpg
 
 ## 09/25/2019
 At our team meeting officially decided we would build our semester project as a mobile app. As a result, I began reading up on React native.
@@ -28,7 +28,7 @@ Developed the Login screen for the UW-Live Well App. Created login screen with a
 Created a GitHub repository for my UW-Live Well mobile app. Wanted to do this so I could get better practice with using Git as my version control system. Importing developer journal so that I can also make commits to the README file.  Watched tutorials on how to connect my React Native app to Firebase. Installed Firebase into my React project. Added ability to 'Create Account' and 'Continue as a Guest' from the main login page.
 
 ## 10/01/2019
-Configured the database configuration in React js. Able to insert first test data into Firebase database
+Configured the database configuration in React js. Able to insert first test data into Firebase database. That data was inserted into two tables, one for user and one for the added houses. Created the page for Account Creation. Created page for adding a new house. Created new dashboard page for the user's to see when they log in as registered user or guest. Need to watch more tutorials on React Naviagation so I know how to connect button clicks with component changes. Need more research on how to select from Firebase database using React.
 
 
 
@@ -38,3 +38,5 @@ Configured the database configuration in React js. Able to insert first test dat
 UW Live Well UML
 Can be found in project as SpikeExcercise.jpg
 [[https://github.com/ethLengfeld/SpikeExcercise/master/SpikeExcercise.jpg|alt=SpikeUML]]
+
+# Resources Used:
