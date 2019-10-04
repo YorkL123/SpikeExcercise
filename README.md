@@ -36,6 +36,13 @@ Watched Linkedin Learning - Learning React Native to get better understanding of
 ### 10/03/2019
 I met with Jonathan to get some help on some navigation issues I was experiencing as well as some issues with Firebase. He was able to show me some ways that I could easily authenticate login and signup using Firebase API. I implemented a new login and sign up function for the respective screens, however I have been unable to see the login and sign up data reflected in the Firebase console.
 
+### 10/04/2019
+Worked on figuring out my bug with the login screen. I'm using Firebase's API to authenticate the login as well as sign up user's and for some reason it's not working at all. Though I didn't complete the project I am pretty happy with the amount of knowledge that I was able to learn on my own. Coming into this project I had very little experience with JavaScript and no experience with React Native. Then without having any experience with Firebase backend being able to connect that to my front-end which was really cool, and gave me a lot of confidence in our semster project moving forward.
+
+# Conclusion
+Though this project felt very overwhelming I was able to get past a lot of the stress and frustration by making my main goal to focus on learning something new. For me that new thing was React Native. Not having any experience in React Native made it very difficult to get started right away.  I wanted to approach this Spike Excercise the same way I have past programming projects where I can just jump in and start right away. However, given the size of this project and I really had to slow myself down and take the time to go through tutorials and get a better understanding of how to develop with React Native. I will say that I am happy with the amount I was able to get done. I'm more happy about the fact that I was able to be challenged and was able to come out with a new knowledge in React Native, Firebase, Expo, and Git. I stated it earlier but this Spike Excercise did make me hopeful for our project going forward I think I'll be able to contribute a lot more to my team now then I would have before doing this excercise.
+
+
 UW Live Well UML
 Can be found in project as SpikeExcercise.jpg
 
