@@ -31,8 +31,10 @@ Created a GitHub repository for my UW-Live Well mobile app. Wanted to do this so
 Configured the database configuration in React js. Able to insert first test data into Firebase database. That data was inserted into two tables, one for user and one for the added houses. Created the page for Account Creation. Created page for adding a new house. Created new dashboard page for the user's to see when they log in as registered user or guest. Need to watch more tutorials on React Naviagation so I know how to connect button clicks with component changes. Need more research on how to select from Firebase database using React.
 
 ### 10/02/2019
-Watched Linkedin Learning - Learning React Native to get better understanding of how I can properly navigate different screens in my mobile app.
+Watched Linkedin Learning - Learning React Native to get better understanding of how I can properly navigate different screens in my mobile app. Decided to restart my ios mobile app as my first attempt was really unorganized which made it difficult to navigate my app. I have imported the 'react-navigation' package which gives me access to the StackNavigator and SwitchNavigator. Using this package I was able to get the app to switch screens based on user interaction. I then moved styling code from my old workspace to my new workspace.
 
+### 10/03/2019
+I met with Jonathan to get some help on some navigation issues I was experiencing as well as some issues with Firebase. He was able to show me some ways that I could easily authenticate login and signup using Firebase API. I implemented a new login and sign up function for the respective screens, however I have been unable to see the login and sign up data reflected in the Firebase console.
 
 UW Live Well UML
 Can be found in project as SpikeExcercise.jpg
